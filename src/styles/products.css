@@ -1,0 +1,42 @@
+.grid-container {
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+}
+
+.grid-item {
+  height: 350px;
+  width: 220px;
+  object-fit: cover;
+  box-shadow: 2px 2px 3px grey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item:hover {
+  transform: scale(1.1);
+}
+.grid-item img {
+  height: 160px;
+  width: 120px;
+}
+
+select {
+  width: 150px;
+  height: 35px;
+  border: 1px solid black;
+  margin-top: 320px;
+  padding: 5px;
+  border-radius: 5px;
+}
